@@ -1,0 +1,12 @@
+@import '~bootstrap/scss/bootstrap';
+
+body {
+	background-color: #333;
+	color: #80F !important;
+	h1 {
+		color: red;
+		span {
+			color: blue;
+		}
+	}
+}
