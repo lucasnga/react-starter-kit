@@ -4,7 +4,12 @@ const common = require('./webpack.config.common');
 
 module.exports = merge(common, {
 	mode: 'development',
-	devtool: 'source-map',
+	devtool: 'inline-source-map',
+	devServer: {
+		host: '0.0.0.0',
+		port: 8080,
+		contentBase: 'src/'
+	},
 	performance: {
 		hints: 'warning',
 		maxEntrypointSize: Math.exp(2 ^ (20 * 10)),
